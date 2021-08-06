@@ -5,23 +5,6 @@ Variables   ${EXEC_DIR}/TestData/APIVariables.py
 
 
 *** Keywords ***
-#Scenario Outline : I like to surf in any of 2 beaches of Sydney
-#    [Arguments]    ${beach1}  ${beach2}
-#    [Documentation]  This is test suite documentation
-#    Select two beaches to surf ${beach1} or ${beach2}
-#    First Preference of beach to surf on ${beach1}
-#    Select Mondays or Fridays from 16 day forecast
-#    Check the temperature forecast >12C and <30C
-#    Check the wind speed forecast between 3 and 9
-#    Check the uv index forecast less than 12
-#    Pick good weather days for each spot
-#
-#    Second Preference of beach to surf on ${beach2}
-#    Select Mondays or Fridays from 16 day forecast
-#    Check the temperature forecast >12C and <30C
-#    Check the wind speed forecast between 3 and 9
-#    Check the uv index forecast less than 12
-#    Pick good weather days for each spot
 
 I like to surf in any of 2 beaches of Sydney
     [Documentation]  This is test suite documentation
