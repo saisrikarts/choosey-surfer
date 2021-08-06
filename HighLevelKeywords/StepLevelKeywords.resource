@@ -63,6 +63,6 @@ I pick best suitable spot out of top two spots, based upon suitable weather fore
     ${finaldays1}    Pick good weather days for each spot  ${goodTempDays1}   ${goodWindDays1}    ${goodUVDays1}
     ${finaldays2}    Pick good weather days for each spot  ${goodTempDays2}   ${goodWindDays2}    ${goodUVDays2}
     ${bestdays}  Get Common Values From Two Lists  ${finaldays1}  ${finaldays2}
-    log to console    best days to visit ${beach1} or ${beach2} are ${bestdays}
+    log to console    best days to visit ${beach1} ${city_id1} or ${beach2} ${city_id2} are ${bestdays}
 
 
