@@ -50,34 +50,6 @@ Select Mondays or Fridays from 16 day forecast
      END
      Set Suite Variable   ${selecteddays}
 
-#    Read the JSON response  ${jsonData}
-#    @{selecteddays}  Create List
-#    @{temperatureOnDays}    Create List
-#    @{WindSpeedOnDays}    Create List
-#    @{UVIndexOnDays}    Create List
-#    FOR  ${i}  IN RANGE  16
-#       ${forecastDays}  Convert date  ${jsonData['data'][${i}]['valid_date']}  result_format= %A
-#       ${forecastDays}   Convert to String  ${forecastDays}
-#       Run keyword and ignore error    Should be equal as strings   ${forecastDays}   Monday
-#       Run keyword and ignore error    Should be equal as strings   ${forecastDays}   Friday
-#       Run keyword if   "${forecastDays}"==" Monday"    Append to List  ${selecteddays}   ${jsonData['data'][${i}]['valid_date']}
-#       Run keyword if   "${forecastDays}"==" Friday"    Append to List  ${selecteddays}   ${jsonData['data'][${i}]['valid_date']}
-#
-#       Run keyword if   "${forecastDays}"==" Monday"    Append to List  ${temperatureOnDays}   ${jsonData['data'][${i}]['temp']}
-#       Run keyword if   "${forecastDays}"==" Friday"    Append to List  ${temperatureOnDays}   ${jsonData['data'][${i}]['temp']}
-#
-#       Run keyword if   "${forecastDays}"==" Monday"    Append to List  ${WindSpeedOnDays}   ${jsonData['data'][${i}]['wind_gust_spd']}
-#       Run keyword if   "${forecastDays}"==" Friday"    Append to List  ${WindSpeedOnDays}   ${jsonData['data'][${i}]['wind_gust_spd']}
-#
-#       Run keyword if   "${forecastDays}"==" Monday"    Append to List  ${UVIndexOnDays}   ${jsonData['data'][${i}]['uv']}
-#       Run keyword if   "${forecastDays}"==" Friday"    Append to List  ${UVIndexOnDays}   ${jsonData['data'][${i}]['uv']}
-#       Set test variable   ${selecteddays}
-#       Set test variable   ${temperatureOnDays}
-#       Set test variable   ${WindSpeedOnDays}
-#       Set test variable   ${UVIndexOnDays}
-#
-#    END
-
 
 Check the temperature forecast >12C and <30C
     [Documentation]    This keyword find the temperature of certain monday or friday
